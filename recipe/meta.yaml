@@ -1,4 +1,4 @@
-{% set version = "4.1-2" %}
+{% set version = "4.2-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/biomod2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/biomod2/biomod2_{{ version }}.tar.gz
-  sha256: cc64a05aedb51cd9d4bad6c8a585350db8db79e3403ce3658aa7a376675c8cef
+  sha256: 9be863811589ba4ac50f57a6879c9efe4dd52d52f533265b5d2e829d4705231a
 
 build:
   merge_build_host: true  # [win]
