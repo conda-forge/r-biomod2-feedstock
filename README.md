@@ -3,7 +3,7 @@ About r-biomod2
 
 Home: https://CRAN.R-project.org/package=biomod2
 
-Package license: GPL-2.0-or-later
+Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-biomod2-feedstock/blob/main/LICENSE.txt)
 
