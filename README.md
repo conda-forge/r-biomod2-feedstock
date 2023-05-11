@@ -1,11 +1,11 @@
-About r-biomod2
-===============
+About r-biomod2-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-biomod2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=biomod2
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-biomod2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions for species distribution modeling, calibration and evaluation, ensemble of models, ensemble forecasting and visualization. The package permits to run consistently up to 10 single models on a presence/absences (resp presences/pseudo-absences) dataset and to combine them in ensemble models and ensemble projections. Some bench of other evaluation and visualisation tools are also available within the package.
 
