@@ -1,4 +1,4 @@
-{% set version = "4.2-3" %}
+{% set version = "4.2-4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/biomod2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/biomod2/biomod2_{{ version }}.tar.gz
-  sha256: 775b4c0313cbe1c20adfd68370d26a13a028849c1eda8f574fc52aa6feef7f12
+  sha256: c28163075df90a90fc1939e9ff24d40bace7de611ff7ddfe027e0ff980e7c64f
 
 build:
   merge_build_host: true  # [win]
@@ -26,18 +26,17 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-mass
-    - r-presenceabsence
     - r-abind
-    - r-data.table
     - r-dplyr
     - r-earth
     - r-foreach
     - r-gbm >=2.1.3
     - r-ggplot2
     - r-maxnet
+    - r-mass
     - r-mda
     - r-nnet
+    - r-presenceabsence
     - r-proc >=1.15.0
     - r-randomforest
     - r-reshape
@@ -45,20 +44,20 @@ requirements:
     - r-rpart
     - r-sp
     - r-terra >=1.6_33
+    - r-xgboost
   run:
     - r-base
-    - r-mass
-    - r-presenceabsence
     - r-abind
-    - r-data.table
     - r-dplyr
     - r-earth
     - r-foreach
     - r-gbm >=2.1.3
     - r-ggplot2
     - r-maxnet
+    - r-mass
     - r-mda
     - r-nnet
+    - r-presenceabsence
     - r-proc >=1.15.0
     - r-randomforest
     - r-reshape
@@ -66,6 +65,7 @@ requirements:
     - r-rpart
     - r-sp
     - r-terra >=1.6_33
+    - r-xgboost
 
 test:
   commands:
@@ -74,6 +74,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=biomod2
+  dev_url: https://github.com/biomodhub/biomod2
   license: GPL-3.0-only
   summary: Functions for species distribution modeling, calibration and evaluation, ensemble of models, ensemble forecasting and visualization. The package permits to run consistently up to 10 single models on a presence/absences (resp presences/pseudo-absences) dataset and to combine them in ensemble models and ensemble
     projections. Some bench of other evaluation and visualisation tools are also available within the package.

@@ -9,6 +9,8 @@ Package license: GPL-3.0-only
 
 Summary: Functions for species distribution modeling, calibration and evaluation, ensemble of models, ensemble forecasting and visualization. The package permits to run consistently up to 10 single models on a presence/absences (resp presences/pseudo-absences) dataset and to combine them in ensemble models and ensemble projections. Some bench of other evaluation and visualisation tools are also available within the package.
 
+Development: https://github.com/biomodhub/biomod2
+
 Current build status
 ====================
 
