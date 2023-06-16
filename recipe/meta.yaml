@@ -26,18 +26,17 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-mass
-    - r-presenceabsence
     - r-abind
-    - r-data.table
     - r-dplyr
     - r-earth
     - r-foreach
     - r-gbm >=2.1.3
     - r-ggplot2
     - r-maxnet
+    - r-mass
     - r-mda
     - r-nnet
+    - r-presenceabsence
     - r-proc >=1.15.0
     - r-randomforest
     - r-reshape
@@ -45,20 +44,20 @@ requirements:
     - r-rpart
     - r-sp
     - r-terra >=1.6_33
+    - r-xgboost
   run:
     - r-base
-    - r-mass
-    - r-presenceabsence
     - r-abind
-    - r-data.table
     - r-dplyr
     - r-earth
     - r-foreach
     - r-gbm >=2.1.3
     - r-ggplot2
     - r-maxnet
+    - r-mass
     - r-mda
     - r-nnet
+    - r-presenceabsence
     - r-proc >=1.15.0
     - r-randomforest
     - r-reshape
@@ -66,6 +65,7 @@ requirements:
     - r-rpart
     - r-sp
     - r-terra >=1.6_33
+    - r-xgboost
 
 test:
   commands:
@@ -74,6 +74,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=biomod2
+  dev_url: https://github.com/biomodhub/biomod2
   license: GPL-3.0-only
   summary: Functions for species distribution modeling, calibration and evaluation, ensemble of models, ensemble forecasting and visualization. The package permits to run consistently up to 10 single models on a presence/absences (resp presences/pseudo-absences) dataset and to combine them in ensemble models and ensemble
     projections. Some bench of other evaluation and visualisation tools are also available within the package.
