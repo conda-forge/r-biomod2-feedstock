@@ -1,4 +1,4 @@
-{% set version = "4.2-5-2" %}
+{% set version = "4.2-6-2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/biomod2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/biomod2/biomod2_{{ version }}.tar.gz
-  sha256: 1c4ca427b8d6af54de548023dcbe25c7e9cbea7afb684c58b66f4210af9eb4e5
+  sha256: 1c4ebf1588dd6d8077e33198b8d896ab4cc75c7614d6afbfe3cff72381dc845c
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
