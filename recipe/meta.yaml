@@ -1,4 +1,4 @@
-{% set version = "4.3-4-3" %}
+{% set version = "4.3-4-4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/biomod2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/biomod2/biomod2_{{ version }}.tar.gz
-  sha256: e6afbb11f08172b59ad9f35174a491ca0fcdb0b45f338be2aabff4c2bddf6c7f
+  sha256: 83264e475070d64a9eea528baeb91c2d87c14daa12696e776a45bc6ea2c0bead
 
 build:
   number: 0
@@ -74,8 +74,8 @@ about:
   home: https://CRAN.R-project.org/package=biomod2
   dev_url: https://github.com/biomodhub/biomod2
   license: GPL-3.0-only
-  summary: Functions for species distribution modeling, calibration and evaluation, ensemble of models, ensemble forecasting and visualization. The package permits to run consistently up to 10 single models on a presence/absences (resp presences/pseudo-absences) dataset and to combine them in ensemble models and ensemble
-    projections. Some bench of other evaluation and visualisation tools are also available within the package.
+  summary: Functions for species distribution modeling, calibration and evaluation, ensemble of models, ensemble forecasting and visualization. The package permits to run consistently up to 10 single models on a presence/absences (resp presences/pseudo-absences) dataset and to combine them in ensemble models and 
+    ensemble projections. Some bench of other evaluation and visualisation tools are also available within the package.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
