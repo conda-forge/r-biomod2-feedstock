@@ -3,7 +3,7 @@ About r-biomod2-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-biomod2-feedstock/blob/main/LICENSE.txt)
 
-Home: https://CRAN.R-project.org/package=biomod2
+Home: https://biomodhub.github.io/biomod2/
 
 Package license: GPL-3.0-only
 
@@ -18,7 +18,9 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://github.com/conda-forge/r-biomod2-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/r-biomod2-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
     </td>
   </tr>
 </table>
